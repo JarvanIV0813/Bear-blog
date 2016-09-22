@@ -51,9 +51,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -100,7 +100,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/22/one/" data-id="cited46nz0001fwpv393i55w4" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/09/22/one/" data-id="cited8j9p00007cpvurtxevbu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,13 +139,13 @@
 <h3 id="2-3-事件处理"><a href="#2-3-事件处理" class="headerlink" title="2-3 事件处理"></a>2-3 事件处理</h3><p>1.事件源<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Js方式：document.getElementById(“id”);</div><div class="line">jQuery方式：$(“<span class="comment">#id”);</span></div></pre></td></tr></table></figure></p>
 <p>2.事件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Js方式 :document.getElementById(“id”).onclick</div><div class="line">jQuery方式: $(“<span class="comment">#id”).click</span></div><div class="line">区别：jQuery的事件不带on</div></pre></td></tr></table></figure></p>
 <p>3.事件处理程序（还有绑定事件，事件委托…）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Js方式 :document.getElementById(“id”).onclick = <span class="function"><span class="title">function</span></span>()&#123;&#125;</div><div class="line">jQuery方式: $(“<span class="comment">#id”).click(function()&#123;&#125;);</span></div></pre></td></tr></table></figure></p>
-<h2 id="三-DOM对象与jQuery对象的转换"><a href="#三-DOM对象与jQuery对象的转换" class="headerlink" title="三.DOM对象与jQuery对象的转换"></a>三.DOM对象与jQuery对象的转换</h2><p>###DOM对象转换为jQuery对象<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var username = document.getElementById(<span class="string">"username"</span>);</div><div class="line">var <span class="variable">$user1</span> = $(username);</div></pre></td></tr></table></figure></p>
-<p>###jQuery对象转换为DOM原生对象<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var <span class="variable">$username</span> = $(<span class="string">"#username"</span>);</div></pre></td></tr></table></figure></p>
+<h2 id="三-DOM对象与jQuery对象的转换"><a href="#三-DOM对象与jQuery对象的转换" class="headerlink" title="三.DOM对象与jQuery对象的转换"></a>三.DOM对象与jQuery对象的转换</h2><h3 id="DOM对象转换为jQuery对象"><a href="#DOM对象转换为jQuery对象" class="headerlink" title="DOM对象转换为jQuery对象"></a>DOM对象转换为jQuery对象</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var username = document.getElementById(<span class="string">"username"</span>);</div><div class="line">var <span class="variable">$user1</span> = $(username);</div></pre></td></tr></table></figure>
+<h3 id="jQuery对象转换为DOM原生对象"><a href="#jQuery对象转换为DOM原生对象" class="headerlink" title="jQuery对象转换为DOM原生对象"></a>jQuery对象转换为DOM原生对象</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var <span class="variable">$username</span> = $(<span class="string">"#username"</span>);</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/21/hello-world/" data-id="cited46nk0000fwpvt4k3n4hq" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/09/21/hello-world/" data-id="cited8ja000017cpvkxlfagqy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +180,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -205,7 +205,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 熊熊的博客<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
