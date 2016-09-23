@@ -6,21 +6,24 @@
   <title>AngularJS常用指令 | 熊熊的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="内置指令AngularJS中所有的内置指令前缀都为ng-,自定义指令不建议使用该前缀，以免冲突
-ng-model本指令用于实现input和变量的双向绑定。
-123&amp;lt;input type=&quot;text&quot; ng-model=&quot;variable&quot;&amp;gt;&amp;lt;p&amp;gt;&amp;#123;&amp;#123;variable&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;p ng-bind=&quot;variable">
+ng-app本指令用于声明Angular的边界 你可以用ng-app 指令告诉Angular 应该管理页面中的哪一块。
+12&amp;lt;div ng-app&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div ng-app=&quot;myAPP&quot;&amp;gt;&amp;lt;/div&amp;gt;
+ng-model本指令用于实现input和">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AngularJS常用指令">
 <meta property="og:url" content="http://yoursite.com/2016/09/23/Angularjs常用指令/index.html">
 <meta property="og:site_name" content="熊熊的博客">
 <meta property="og:description" content="内置指令AngularJS中所有的内置指令前缀都为ng-,自定义指令不建议使用该前缀，以免冲突
-ng-model本指令用于实现input和变量的双向绑定。
-123&amp;lt;input type=&quot;text&quot; ng-model=&quot;variable&quot;&amp;gt;&amp;lt;p&amp;gt;&amp;#123;&amp;#123;variable&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;p ng-bind=&quot;variable">
-<meta property="og:updated_time" content="2016-09-23T04:48:21.618Z">
+ng-app本指令用于声明Angular的边界 你可以用ng-app 指令告诉Angular 应该管理页面中的哪一块。
+12&amp;lt;div ng-app&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div ng-app=&quot;myAPP&quot;&amp;gt;&amp;lt;/div&amp;gt;
+ng-model本指令用于实现input和">
+<meta property="og:updated_time" content="2016-09-23T05:18:52.419Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AngularJS常用指令">
 <meta name="twitter:description" content="内置指令AngularJS中所有的内置指令前缀都为ng-,自定义指令不建议使用该前缀，以免冲突
-ng-model本指令用于实现input和变量的双向绑定。
-123&amp;lt;input type=&quot;text&quot; ng-model=&quot;variable&quot;&amp;gt;&amp;lt;p&amp;gt;&amp;#123;&amp;#123;variable&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;&amp;lt;p ng-bind=&quot;variable">
+ng-app本指令用于声明Angular的边界 你可以用ng-app 指令告诉Angular 应该管理页面中的哪一块。
+12&amp;lt;div ng-app&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div ng-app=&quot;myAPP&quot;&amp;gt;&amp;lt;/div&amp;gt;
+ng-model本指令用于实现input和">
   
     <link rel="alternate" href="/atom.xml" title="熊熊的博客" type="application/atom+xml">
   
@@ -58,9 +61,9 @@ ng-model本指令用于实现input和变量的双向绑定。
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -92,14 +95,25 @@ ng-model本指令用于实现input和变量的双向绑定。
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="内置指令"><a href="#内置指令" class="headerlink" title="内置指令"></a>内置指令</h2><p>AngularJS中所有的内置指令前缀都为ng-,自定义指令不建议使用该前缀，以免冲突</p>
+<h3 id="ng-app"><a href="#ng-app" class="headerlink" title="ng-app"></a>ng-app</h3><p>本指令用于声明Angular的边界 你可以用ng-app 指令告诉Angular 应该管理页面中的哪一块。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-app&gt;&lt;/div&gt;</div><div class="line">&lt;div ng-app=<span class="string">"myAPP"</span>&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
 <h3 id="ng-model"><a href="#ng-model" class="headerlink" title="ng-model"></a>ng-model</h3><p>本指令用于实现input和变量的双向绑定。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> ng-model=<span class="string">"variable"</span>&gt;</div><div class="line">&lt;p&gt;&#123;&#123;variable&#125;&#125;&lt;/p&gt;</div><div class="line">&lt;p ng-bind=<span class="string">"variable"</span>&gt;&lt;/p&gt;</div></pre></td></tr></table></figure>
 <h3 id="ng-init"><a href="#ng-init" class="headerlink" title="ng-init"></a>ng-init</h3><p> 本指令初始化应用程序数据，这个不常使用。通常情况下，不使用 ng-init。您将使用一个控制器或模块来代替它。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> ng-init=<span class="string">"乔安"</span>&gt;</div><div class="line">&lt;p&gt;你好&#123;&#123;variable&#125;&#125;&lt;/p&gt;</div><div class="line">你好&lt;span ng-bind=<span class="string">"variable"</span>&gt;&lt;/span&gt;</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="built_in">type</span>=<span class="string">"text"</span> ng-init=<span class="string">"乔安"</span>&gt;</div><div class="line">&lt;p&gt;你好&#123;&#123;variable&#125;&#125;&lt;/p&gt;</div><div class="line">你好&lt;span ng-bind=<span class="string">"variable"</span>&gt;&lt;/span&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="ng-controller"><a href="#ng-controller" class="headerlink" title="ng-controller"></a>ng-controller</h3><p>本指令用于为你的应用添加控制器。<br>在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-app=<span class="string">"myApp"</span> ng-controller=<span class="string">"myCtrl"</span>&gt;</div><div class="line">Full Name: &#123;&#123;firstName + <span class="string">" "</span> + lastName&#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script&gt;</div><div class="line">var app = angular.module(<span class="string">'myApp'</span>, []);</div><div class="line">app.controller(<span class="string">'myCtrl'</span>, <span class="keyword">function</span>(<span class="variable">$scope</span>) &#123;</div><div class="line">    <span class="variable">$scope</span>.firstName = <span class="string">"John"</span>;</div><div class="line">    <span class="variable">$scope</span>.lastName = <span class="string">"Doe"</span>;</div><div class="line">&#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="ng-checked"><a href="#ng-checked" class="headerlink" title="ng-checked"></a>ng-checked</h3><p>本指令用于设置复选框(checkbox)或单选按钮(radio)的 checked 属性。<br>如果 ng-checked 属性返回 true，复选框(checkbox)或单选按钮(radio)将会被选中。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;body ng-app=<span class="string">""</span>&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> ng-model=<span class="string">"all"</span>&gt;全选&lt;br&gt;&lt;br&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> ng-checked=<span class="string">"all"</span>&gt;Volvo&lt;br&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> ng-checked=<span class="string">"all"</span>&gt;Ford&lt;br&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> ng-checked=<span class="string">"all"</span>&gt;Mercedes</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<h3 id="ng-show"><a href="#ng-show" class="headerlink" title="ng-show"></a>ng-show</h3><p>本指令在表达式为 true 时显示指定的 HTML 元素，否则隐藏指定的 HTML 元素</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> ng-model=<span class="string">"myVar"</span>&gt;</div><div class="line">&lt;div ng-show=<span class="string">"myVar"</span>&gt;</div><div class="line">&lt;h1&gt;Welcome&lt;/h1&gt;</div><div class="line">&lt;p&gt;Welcome to my home.&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="ng-hide"><a href="#ng-hide" class="headerlink" title="ng-hide"></a>ng-hide</h3><p>本指令在表达式为 true 时显示指定的 HTML 元素，否则隐藏指定的 HTML 元素</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> ng-model=<span class="string">"myVar"</span>&gt;</div><div class="line">&lt;div ng-hide=<span class="string">"myVar"</span>&gt;</div><div class="line">&lt;h1&gt;Welcome&lt;/h1&gt;</div><div class="line">&lt;p&gt;Welcome to my home.&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/23/Angularjs常用指令/" data-id="citfaer0i00008kpvucx4jtub" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/09/23/Angularjs常用指令/" data-id="citfbing2000078pvgelwpc2f" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -110,7 +124,7 @@ ng-model本指令用于实现input和变量的双向绑定。
   
   
     <a href="/2016/09/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">JQuery 库</div>
     </a>
   
@@ -143,7 +157,7 @@ ng-model本指令用于实现input和变量的双向绑定。
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -168,7 +182,7 @@ ng-model本指令用于实现input和变量的双向绑定。
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 熊熊的博客<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
