@@ -51,9 +51,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -86,21 +86,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://www.baidu.con/" target="_blank" rel="external">AngularJS</a>是一个 JavaScript 框架。它可通过<script> 标签添加到 HTML 页面。<br>AngularJS 通过指令扩展了HTML，且通过表达式绑定数据到HTML。</p>
+        <p><a href="https://www.baidu.con/" target="_blank" rel="external">AngularJS</a>是一个 JavaScript 框架。它可通过<script>标签添加到 HTML 页面。<br>AngularJS 通过指令扩展了HTML，且通过表达式绑定数据到HTML。</p>
 <h3 id="AngularJS-是一个-JavaScript-框架"><a href="#AngularJS-是一个-JavaScript-框架" class="headerlink" title="AngularJS 是一个 JavaScript 框架"></a>AngularJS 是一个 JavaScript 框架</h3><p>AngularJS 是一个JavaScript 框架。它是一个以 JavaScript 编写的库。<br>AngularJS是以一个JavaScript文件形式发布的可通过script标签添加到网页中：</p>
-<h2 id="一-jquery"><a href="#一-jquery" class="headerlink" title="一. jquery"></a>一. jquery</h2><h3 id="1-1-jQuery下载"><a href="#1-1-jQuery下载" class="headerlink" title="1-1 jQuery下载"></a>1-1 jQuery下载</h3><h3 id="1-2-jQuery引用"><a href="#1-2-jQuery引用" class="headerlink" title="1-2 jQuery引用"></a>1-2 jQuery引用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">'jquery-1.11.3.js'</span>&gt;</div></pre></td></tr></table></figure>
-<h2 id="二-jQuery的基本使用"><a href="#二-jQuery的基本使用" class="headerlink" title="二. jQuery的基本使用"></a>二. jQuery的基本使用</h2><h3 id="2-1-jQuery的入口函数"><a href="#2-1-jQuery的入口函数" class="headerlink" title="2-1 jQuery的入口函数"></a>2-1 jQuery的入口函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(document).ready(<span class="function"><span class="title">function</span></span>()&#123;&#125;);</div><div class="line">$(<span class="function"><span class="title">function</span></span>()&#123;&#125;);</div></pre></td></tr></table></figure>
-<h3 id="2-2-document-ready和window-onload-区别"><a href="#2-2-document-ready和window-onload-区别" class="headerlink" title="2-2 $(document).ready和window.onload 区别"></a>2-2 $(document).ready和window.onload 区别</h3><p>windows.onload方法是在网页中所有的元素（包括元素的所有关联文件）完全加载到浏览器后才执行，即Javascript此时才可以访问网页中的任何元素。<br>$(document).ready方法注册的事件处理程序， 在DOM完全就绪时就可以被调用。此时，网页的所有元素对jQuery而言都是可以访问的，但是，这并不意味着这些元素关联的文件都已经下载完毕。</p>
-<h3 id="2-3-事件处理"><a href="#2-3-事件处理" class="headerlink" title="2-3 事件处理"></a>2-3 事件处理</h3><p>1.事件源<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Js方式：document.getElementById(“id”);</div><div class="line">jQuery方式：$(“<span class="comment">#id”);</span></div></pre></td></tr></table></figure></p>
-<p>2.事件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Js方式 :document.getElementById(“id”).onclick</div><div class="line">jQuery方式: $(“<span class="comment">#id”).click</span></div><div class="line">区别：jQuery的事件不带on</div></pre></td></tr></table></figure></p>
-<p>3.事件处理程序（还有绑定事件，事件委托…）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Js方式 :document.getElementById(“id”).onclick = <span class="function"><span class="title">function</span></span>()&#123;&#125;</div><div class="line">jQuery方式: $(“<span class="comment">#id”).click(function()&#123;&#125;);</span></div></pre></td></tr></table></figure></p>
-<h2 id="三-DOM对象与jQuery对象的转换"><a href="#三-DOM对象与jQuery对象的转换" class="headerlink" title="三.DOM对象与jQuery对象的转换"></a>三.DOM对象与jQuery对象的转换</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">DOM对象转换为jQuery对象</div><div class="line">var username = document.getElementById(<span class="string">"username"</span>);</div><div class="line">var <span class="variable">$user1</span> = $(username);</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">jQuery对象转换为DOM原生对象</div><div class="line">var <span class="variable">$username</span> = $(<span class="string">"#username"</span>);</div></pre></td></tr></table></figure>
 </script></p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/23/one/" data-id="citf20u440001sgpvt33lco98" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/09/23/one/" data-id="citf2e4sn0001owpvhy4jbsck" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -145,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/23/hello-world/" data-id="citf20u390000sgpv26klk6tg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/09/23/hello-world/" data-id="citf2e4sn0000owpve07z5tgr" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -180,7 +172,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -205,7 +197,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 熊熊的博客<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
